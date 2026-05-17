@@ -1,11 +1,4 @@
-
-
-
-const mockUsers = [
-    { username: 'admin@exemple.com', password: '123456'
-    },
-    { username: 'user@exemple.com', password: 'password' }
-];
+import { mockUsers } from '../../../Banco de Dados/BDMock';
 
 
 export async function authServiceMock(username: string, password: string): Promise<string> {

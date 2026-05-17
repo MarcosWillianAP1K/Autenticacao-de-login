@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Variáveis de Ambiente (MUITO IMPORTANTE)
+.env
+.env.*
+!.env.example
+
+# Banco de Dados SQLite (Para não subir os dados locais pro GitHub)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Build do Backend (caso você use a pasta 'build' em vez de 'dist')
+build/

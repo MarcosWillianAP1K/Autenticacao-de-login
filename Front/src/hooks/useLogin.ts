@@ -1,7 +1,5 @@
 import { useState } from "react";
-// import { authService } from "../services/LoginService";
-import { authServiceMock } from "../services/LoginServiceMock";
-
+import { authService } from "../services/LoginService"; 
 
 export function useLogin() {
     const [loading, setLoading] = useState(false);
@@ -12,7 +10,7 @@ export function useLogin() {
         setError(null);
 
         try {
-            const token = await authServiceMock(username, password);
+            const token = await authService(username, password); 
             localStorage.setItem('token', token);
             return true;
         } catch (err) {
